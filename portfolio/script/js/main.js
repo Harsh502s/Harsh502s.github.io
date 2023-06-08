@@ -49,13 +49,15 @@ sr.reveal('.about__text', { delay: 400 });
 sr.reveal('.skills__subtitle', {});
 sr.reveal('.skills__text', {});
 sr.reveal('.skills__data', { interval: 50 });
-sr.reveal('.skills__img', { delay: 300 });
+sr.reveal('.skills__img', { delay: 10 });
 
 /*SCROLL PROJECTS*/
-sr.reveal('.projects__container', {});
-sr.reveal('.projects__title', { delay: 200 });
-sr.reveal('.projects__description', { delay: 400 });
-sr.reveal('.projects__img', { interval: 50 });
+sr.reveal('.project-content', { interval: 50 });
+sr.reveal('.project-grid', { interval: 50 });
+sr.reveal('.pro__img', { interval: 100 });
+sr.reveal('.pro__text', { interval: 50 });
+sr.reveal('.stack', { interval: 10 });
+sr.reveal('.links', { interval: 10 });
 
 /*SCROLL CONTACT*/
 sr.reveal('.contact__box ', { interval: 50 });
