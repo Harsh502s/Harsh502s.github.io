@@ -284,10 +284,34 @@ canvas.particles-js-canvas-el {
 
 .home__img {
   position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 295px;
+  width: 30rem;
+  height: auto;
+  border: #000 2px solid;
+  overflow: hidden;
+  /* Adding animation to make the image morph */
+  animation: morph 8s ease-in-out infinite;
+  background-color: transparent;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: all 1s ease-in-out;
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
 }
+
+@keyframes morph {
+  0% {
+      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+
+  50% {
+      border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+
+  100% {
+      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+}
+
 
 /*BUTTONS*/
 .button {
@@ -659,15 +683,15 @@ canvas.particles-js-canvas-el {
 .contact__container {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  gap: 30px;
 }
 
 .contact__box {
   background-color: #f8f8f8;
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  width: 45%;
+  width: 70%;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -676,13 +700,13 @@ canvas.particles-js-canvas-el {
 }
 
 .contact__box-title {
-  font-size: 20px;
+  font-size: 30px;
   margin-bottom: 12px;
   color: #0056b3;
 }
 
 .contact__box-content {
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 0;
   color: #444;
 }
@@ -690,8 +714,8 @@ canvas.particles-js-canvas-el {
 /* Add hover effect */
 .contact__box:hover {
   transform: translateY(-5px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.8s ease-in-out;
 }
 
 

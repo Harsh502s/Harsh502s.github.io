@@ -310,3 +310,7 @@ $(window).on("load", function () {
   }, 1000);
   $(".loader-container").fadeOut(2500);
 });
+
+$(document).ready(function() {
+  $('.profile-pic').addClass('morph-animation');
+});
