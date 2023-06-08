@@ -488,25 +488,44 @@ canvas.particles-js-canvas-el {
 
 
 /* ===== CONTACT =====*/
-.contact__input {
-  width: 100%;
-  font-size: var(--normal-font-size);
-  font-weight: var(--font-semi);
-  padding: 1rem;
-  border-radius: .5rem;
-  border: 1.5px solid var(--second-color);
-  outline: none;
-  margin-bottom: var(--mb-4);
+.contact__container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
 }
 
-.contact__button {
-  display: block;
-  border: none;
-  outline: none;
-  font-size: var(--normal-font-size);
-  cursor: pointer;
-  margin-left: auto;
+.contact__box {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 45%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+.contact__box-title {
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: #0056b3;
+}
+
+.contact__box-content {
+  font-size: 16px;
+  margin-bottom: 0;
+  color: #444;
+}
+
+/* Add hover effect */
+.contact__box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
 
 /* ===== FOOTER =====*/
 .footer {
@@ -618,8 +637,9 @@ canvas.particles-js-canvas-el {
     column-gap: 2rem;
   }
 
-  .contact__form {
-    width: 360px;
+  .project__img {
+    width: 100%;
+    height: 100%;
   }
 
   .contact__container {
