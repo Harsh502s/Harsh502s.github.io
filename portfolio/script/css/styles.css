@@ -284,18 +284,19 @@ canvas.particles-js-canvas-el {
 
 .home__img {
   position: absolute;
+  background-image: url("../img/dp2.png");
   width: 350px;
   height: auto;
   bottom: 35%;
   left: 60%;
-  border: #000 2px solid;
+  border: 3px solid black;
   overflow: hidden;
   animation: morph 8s ease-in-out infinite;
   background-color: transparent;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  transition: all 0.3s ease-in-out;
+  /* transition: all 1ms ease-in-out; */
   border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
 }
 
