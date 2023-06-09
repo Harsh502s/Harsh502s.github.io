@@ -284,33 +284,33 @@ canvas.particles-js-canvas-el {
 
 .home__img {
   position: absolute;
-  width: 30rem;
+  width: 350px;
   height: auto;
+  bottom: 35%;
+  left: 60%;
   border: #000 2px solid;
   overflow: hidden;
-  /* Adding animation to make the image morph */
   animation: morph 8s ease-in-out infinite;
   background-color: transparent;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  transition: all 1s ease-in-out;
+  transition: all 0.3s ease-in-out;
   border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
 }
 
 @keyframes morph {
   0% {
-      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   }
-
   50% {
-      border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
   }
-
   100% {
-      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   }
 }
+
 
 
 /*BUTTONS*/
@@ -550,7 +550,7 @@ canvas.particles-js-canvas-el {
   text-align: center;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding: 0.5rem;
   /* Added padding */
   transition: all 0.3s ease-in-out;
   /* Added transition */
@@ -802,13 +802,6 @@ canvas.particles-js-canvas-el {
     margin-right: var(--mb-4);
   }
 
-  .home__img {
-    width: 350px;
-    height: auto;
-    bottom: 35%;
-    left: 60%;
-  }
-
   .about__container,
   .skills__container {
     grid-template-columns: repeat(2, 1fr);
@@ -832,7 +825,5 @@ canvas.particles-js-canvas-el {
     margin-right: auto;
   }
 
-  .home__img {
-    right: 10%;
-  }
+
 }
