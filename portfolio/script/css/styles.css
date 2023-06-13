@@ -296,7 +296,7 @@ canvas.particles-js-canvas-el {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  /* transition: all 1ms ease-in-out; */
+  transition: all 1ms ease-in-out;
   border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
 }
 

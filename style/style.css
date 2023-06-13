@@ -42,6 +42,9 @@ canvas.particles-js-canvas-el {
 .hero_section .row {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    margin: 0px 0px;
+    padding: 0px 0px;
     height: 100vh;
 }
 
@@ -53,7 +56,7 @@ p {
 }
 
 .hero_section .row h3 {
-    font-size: 19px;
+    font-size: 25px;
     font-weight: 30px;
     margin-bottom: 15px;
 
@@ -68,14 +71,7 @@ p {
 .hero_section .row h2 {
     font-size: 20px;
     font-weight: 100;
-    margin: 8px 0px;
-}
-
-.hero_section .row p {
-    font-size: 13px;
-    margin-top: 13px;
-    line-height: 21px;
-    color: var(--secondary-color);
+    margin: 20px 0px;
 }
 
 .hero_section .row button {
@@ -83,10 +79,9 @@ p {
     font-size: 19px;
     color: white;
     background-color: var(--pink-color);
-    border: 3px solid var(--pink-color);
+    border: 5px solid var(--pink-color);
     width: 113px;
-    font-family: 'Poppins', sans-serif;
-    margin-top: 10px;
+    margin-top: 50px;
     position: relative;
     overflow: hidden;
 }
@@ -116,6 +111,39 @@ p {
     opacity: 1;
 }
 
+.hero_section .row button::after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.3) 100%);
+    transform: rotate(-45deg);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.hero_section .row button:hover::after {
+    opacity: 1;
+}
+
+.hero_section .row button span {
+    position: relative;
+    z-index: 1;
+}
+
+.hero_section .row button:hover span {
+    color: black;
+}
+
+.hero_section .row button:hover span::before {
+    animation: shine 0.75s;
+}
+
+.hero_section .row button:hover span::after {
+    animation: shine 0.75s;
+}
 
 .hero_section .row img {
     background-image: url("../img/profile_pic.png");
