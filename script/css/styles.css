@@ -280,7 +280,7 @@ canvas.particles-js-canvas-el {
 .home__social-icon:hover,
 .home__social-icon:focus {
   color: var(--first-color);
-  animation: jump 0.4s ease-in-out infinite;
+  animation: jump 0.7s ease-in-out infinite;
 }
 
 @keyframes jump {
