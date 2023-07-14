@@ -1,5 +1,5 @@
 /*===== GOOGLE FONTS =====*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 /*===== VARIABLES CSS =====*/
 :root {
@@ -665,41 +665,37 @@ canvas.particles-js-canvas-el {
 /* ===== CONTACT =====*/
 .contact__container {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   gap: 35px;
 }
 
 .contact__box {
-  background-color: #f8f8f8;
-  padding: 10px;
-  border-radius: 15px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  width: 70%;
+  background-color: gradient(to right, #fff, #fff);
+  padding: 5px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  width: 100%;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .contact__box-title {
   font-size: 30px;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   color: #0056b3;
 }
 
 .contact__box-content {
   font-size: 18px;
-  margin-bottom: 0;
+  margin-bottom: 20px;
   color: #444;
 }
 
 /* Add hover effect */
 .contact__box:hover {
   transform: translateY(-5px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-  transition: transform 0.8s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
 }
+
 
 
 /* ===== FOOTER =====*/
