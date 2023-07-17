@@ -392,8 +392,8 @@ canvas.particles-js-canvas-el {
   font-weight: var(--font-semi);
   padding: .5rem 1rem;
   margin-bottom: var(--mb-4);
-  border-radius: .5rem;
-  box-shadow: 0 4px 25px rgba(14, 36, 49, .15);
+  border-radius: .7rem;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.3);
 }
 
 .skills__icon {
@@ -407,41 +407,13 @@ canvas.particles-js-canvas-el {
   align-items: center;
 }
 
-.skills__bar {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  background-color: var(--first-color);
-  height: .25rem;
-  border-radius: .5rem;
-  z-index: var(--z-back);
-}
-
-.skills__py {
-  width: 100%;
-}
-
-.skills__sql {
-  width: 100%;
-}
-
-.skills__ml {
-  width: 100%;
-}
-
-.skills__dl {
-  width: 100%;
-}
-
-.skills__nlp {
-  width: 100%;
-}
-
 .skills__img {
-  border-radius: .5rem;
-  width: 90%;
-  height: 90%;
-  margin-left: auto;
+  border-radius: 4.5rem;
+  width: 28rem;
+  height: 27.5rem;
+  margin-left: 5rem;
+  padding: auto;
+
 }
 
 /* ===== PROJECTS =====*/
@@ -515,8 +487,8 @@ canvas.particles-js-canvas-el {
 
 .projects-grid .pro__img {
   display: block;
-  max-width: 58%;
-  max-height: 100%;
+  max-width: 60%;
+  height: 25rem;
   border-radius: 2rem;
   background-color: #76767633;
   overflow: hidden;
@@ -622,40 +594,7 @@ canvas.particles-js-canvas-el {
   
 }
 
-.links a i {
-  font-size: 1.7rem;
-  color: black;
-  margin-right: 0.5rem;
-  transition: all 0.3s ease-in-out;
-  /* Added transition */
-
-}
-
-.links a .link-icon {
-  font-size: 2rem !important;
-  color: black !important;
-  margin-right: 0.5rem;
-  transition: all 0.3s ease-in-out;
-  /* Added transition */
-
-}
-
-.links a img {
-  width: 50px;
-  height: 50px;
-  margin-right: 0.5rem;
-  transition: all 0.3s ease-in-out;
-  /* Added transition */
-
-}
-
-.links a:hover {
-  color: rgba(0, 0, 0, 0.5);
-  transition: all 0.3s;
-  /* Added transition */
-}
-
-.reversed-proj {
+.reversed {
   flex-direction: row-reverse !important;
   /* Added !important */
 
@@ -665,7 +604,6 @@ canvas.particles-js-canvas-el {
 /* ===== CONTACT =====*/
 .contact__container {
   display: flex;
-  /* justify-content: space-between; */
   gap: 35px;
 }
 
