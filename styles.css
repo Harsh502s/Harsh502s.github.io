@@ -367,7 +367,7 @@ canvas.particles-js-canvas-el {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 .projects-grid .pro {
@@ -376,15 +376,17 @@ canvas.particles-js-canvas-el {
   border-radius: 2rem;
 }
 
-/* .projects-grid .pro__1 {
-  padding: 1.5rem 1.5rem;
-} */
+.projects-grid .pro__1 {
+  padding: 1rem 1rem;
+  margin: 1rem 2rem;
+}
 
 .projects-grid .pro__img {
   display: block;
   border-radius: 2rem;
   overflow: hidden;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  width: 50%;
 }
 
 .projects-grid .pro__text {
@@ -397,6 +399,8 @@ canvas.particles-js-canvas-el {
   justify-content: center;
   align-items: center;
   padding: 1rem;
+  margin-left: 7rem;
+  margin-right: 7rem;
 }
 
 .projects-grid .pro__text h3 {
