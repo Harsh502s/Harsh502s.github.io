@@ -9,8 +9,8 @@
 
 /*===== Colors =====*/
 :root {
-  --first-color: #4070F4;
-  --second-color: #0E2431;
+  --first-color: #1d4ed8;
+  --second-color: #071c28;
 }
 
 /*===== Fonts =====*/
@@ -620,7 +620,7 @@ canvas.particles-js-canvas-el {
 .contact__box-title {
   font-size: 30px;
   margin-bottom: 5px;
-  color: #0056b3;
+  color: #1d4ed8;
 }
 
 .contact__box-content {
@@ -667,7 +667,7 @@ canvas.particles-js-canvas-el {
     margin: 0;
   }
 
-  .section {
+.section {
     padding-top: 4rem;
     padding-bottom: 3rem;
   }
@@ -748,3 +748,4 @@ canvas.particles-js-canvas-el {
 
 
 }
+
