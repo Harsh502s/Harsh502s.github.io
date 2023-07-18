@@ -386,7 +386,8 @@ canvas.particles-js-canvas-el {
   border-radius: 2rem;
   overflow: hidden;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  width: 50%;
+  width: 65%;
+  height: 100%;
 }
 
 .projects-grid .pro__text {
