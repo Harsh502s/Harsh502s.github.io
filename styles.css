@@ -10,7 +10,7 @@
 /*===== Colors =====*/
 :root {
   --first-color: #1d4ed8;
-  --second-color: #071c28;
+  --second-color: #303030;
 }
 
 /*===== Fonts =====*/
@@ -124,7 +124,7 @@ canvas.particles-js-canvas-el {
   width: 100%;
   position: fixed;
   z-index: var(--z-fixed);
-  background-color: #ffffff;
+  background-color: white;
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.1);
 }
 
@@ -156,7 +156,7 @@ canvas.particles-js-canvas-el {
 
 .nav__link {
   position: relative;
-  color: #fff;
+  color: white;
   transition: color 0.3s ease;
 }
 
@@ -222,7 +222,7 @@ canvas.particles-js-canvas-el {
   margin-top: 3.5rem;
   font-size: 1.2rem;
   background-color: var(--first-color);
-  color: #fff;
+  color: white;
   padding: 0.75rem 2.5rem;
   font-weight: 600;
   border-radius: 0.5rem;
@@ -290,7 +290,7 @@ canvas.particles-js-canvas-el {
 .about__img img {
   width: 200px;
   border-radius: 0.5rem;
-  border: 3px solid black;
+  border: 3px solid var(--second-color);
   animation: morph 4.5s ease-in-out infinite;
   border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
 }
@@ -356,7 +356,7 @@ canvas.particles-js-canvas-el {
 
 .project-content p {
   font-size: larger;
-  color: black;
+  color: var(--second-color);
   font-weight: 600;
 }
 
@@ -408,7 +408,7 @@ canvas.particles-js-canvas-el {
   font-size: var(--h1-font-size);
   /* Updated font-size */
   text-transform: uppercase;
-  color: black;
+  color: var(--second-color);
   margin-bottom: 2rem;
   font-weight: 700;
   font-size: large;
@@ -419,7 +419,7 @@ canvas.particles-js-canvas-el {
 .projects-grid .pro__text p {
   font-size: var(--small-font-size);
   /* Updated font-size */
-  color: black;
+  color: var(--second-color);
   text-align: center;
   font-weight: 500;
   font-size: medium;
@@ -442,7 +442,7 @@ canvas.particles-js-canvas-el {
 }
 
 .stack p {
-  color: black !important;
+  color: var(--second-color) !important;
   font-weight: 600 !important;
   background-color: white;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
@@ -464,7 +464,7 @@ canvas.particles-js-canvas-el {
 
 .links a {
   font-size: 1.3rem;
-  color: black;
+  color: var(--second-color) !important;
   font-weight: 400;
   text-decoration: none;
   display: flex;
@@ -497,13 +497,13 @@ canvas.particles-js-canvas-el {
 .contact__box-title {
   font-size: 30px;
   margin-bottom: 4px;
-  color: #1d4ed8;
+  color: var(--first-color);
 }
 
 .contact__box-content {
   font-size: 18px;
   margin-bottom: 25px;
-  color: black;
+  color: var(--second-color);
 }
 
 /* Add hover effect */
