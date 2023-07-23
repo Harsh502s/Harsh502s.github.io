@@ -392,7 +392,7 @@ canvas.particles-js-canvas-el {
 
 .projects-grid .pro__text {
   display: flex;
-  width: 25rem;
+  width: 29rem;
   /* Updated width */
   height: auto;
   flex-direction: column;
@@ -400,8 +400,8 @@ canvas.particles-js-canvas-el {
   justify-content: center;
   align-items: center;
   padding: 1rem;
-  margin-left: 7rem;
-  margin-right: 7rem;
+  margin-left: 5rem;
+  margin-right: 4rem;
 }
 
 .projects-grid .pro__text h3 {
