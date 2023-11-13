@@ -176,6 +176,7 @@ canvas.particles-js-canvas-el {
 
 .nav__logo {
   color: var(--second-color);
+  font-size:xx-large;
 }
 
 .nav__toggle {
