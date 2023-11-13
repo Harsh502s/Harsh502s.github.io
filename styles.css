@@ -420,8 +420,7 @@ canvas.particles-js-canvas-el {
   text-align: center;
   font-weight: 500;
   font-size: medium;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 0.5rem;
 }
 
 .stack {
@@ -432,6 +431,8 @@ canvas.particles-js-canvas-el {
   width: 100%;
   text-align: center;
   gap: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .stack p {
