@@ -346,7 +346,7 @@ canvas.particles-js-canvas-el {
 /* ===== PROJECTS =====*/
 .project {
   background-color: rgb(255, 255, 255);
-  padding: 9.25rem;
+  padding: 12rem;
   flex-direction: column;
 }
 
@@ -363,12 +363,10 @@ canvas.particles-js-canvas-el {
 
 .projects-grid {
   display: grid;
-  padding: 1px;
-  row-gap: 1px;
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 3rem;
+  margin-top: 3.5rem;
 }
 
 .projects-grid .pro {
@@ -379,16 +377,14 @@ canvas.particles-js-canvas-el {
 
 .projects-grid .pro__1 {
   padding: 1rem 1rem;
-  margin: 1rem 2rem;
+  margin: 1rem 1rem;
 }
 
 .projects-grid .pro__img {
-  display: block;
   border-radius: 2rem;
   overflow: hidden;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   width: 65%;
-  height: 100%;
 }
 
 .projects-grid .pro__text {
@@ -435,10 +431,6 @@ canvas.particles-js-canvas-el {
   flex-wrap: wrap;
   width: 100%;
   text-align: center;
-  margin-top: 1rem;
-  /* Added margin */
-  margin-bottom: 1rem;
-  /* Added margin */
   gap: 1rem;
 }
 
