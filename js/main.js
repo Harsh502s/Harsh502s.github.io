@@ -25,40 +25,76 @@ function linkAction() {
 }
 navLink.forEach((n) => n.addEventListener('click', linkAction));
 
+/*===== SCROLL SECTIONS ACTIVE LINK =====*/
+const sections = document.querySelectorAll('section[id]')
+
+function scrollActive(){
+    const scrollY = window.pageYOffset
+
+    sections.forEach(current =>{
+        const sectionHeight = current.offsetHeight
+        const sectionTop = current.offsetTop - 100;
+        const sectionId = current.getAttribute('id')
+
+        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active')
+        }else{
+            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active')
+        }
+    })
+}
+window.addEventListener('scroll', scrollActive)
+
 /*===== SCROLL REVEAL ANIMATION =====*/
 const sr = ScrollReveal({
-    origin: 'left',
-    distance: '80px',
-    duration: 650,
-    reset: true,
+    origin: 'bottom',
+    distance: '60px',
+    duration: 800,
+    delay: 200,
+    reset: false,
 });
 
 /*SCROLL HOME*/
-sr.reveal('.home__title', { delay: 100 });
-sr.reveal('.home__subtitle', { delay: 150 });
-sr.reveal('.button', { delay: 200 });
-sr.reveal('.home__social', { interval: 150 });
+sr.reveal('.home__title', { delay: 100, origin: 'top' });
+sr.reveal('.home__subtitle', { delay: 200, origin: 'top' });
+sr.reveal('.btn--primary', { delay: 300 });
+sr.reveal('.social-icon', { interval: 100, delay: 400 });
 
 /*SCROLL ABOUT*/
-sr.reveal('.about__img', { delay: 100 });
-sr.reveal('.about__text', { delay: 300 });
+sr.reveal('.about__img-wrapper', { origin: 'left' });
+sr.reveal('.about__text', { interval: 150, origin: 'right' });
+sr.reveal('.section-title', { origin: 'top', delay: 100 });
 
 /*SCROLL SKILLS*/
-sr.reveal('.skills__subtitle', { delay: 100 });
-sr.reveal('.skills__data', { interval: 10 });
-sr.reveal('.skills__names', { interval: 100 });
-sr.reveal('.skills__img', { delay: 300 });
+sr.reveal('.skill-item', { interval: 100 });
 
 /*SCROLL PROJECTS*/
-sr.reveal('.project-content', { interval: 30 });
-sr.reveal('.project-grid', { interval: 30 });
-sr.reveal('.pro__img', { interval: 70 });
-sr.reveal('.pro__text', { interval: 30 });
-sr.reveal('.stack', { interval: 5 });
-sr.reveal('.links', { interval: 5 });
+sr.reveal('.project-card', { interval: 150 });
 
 /*SCROLL CONTACT*/
-sr.reveal('.contact__box', { interval: 30 });
-sr.reveal('.contact__box-title', { interval: 30 });
-sr.reveal('.contact__box-content', { interval: 30 });
-sr.reveal('.contact__box-icon', { interval: 30 });
+sr.reveal('.contact-card', { interval: 150 });
+
+/* SKILL BAR ANIMATION */
+const skillBars = document.querySelectorAll('.skill-bar-fill');
+
+const animateSkillBars = (entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const bar = entry.target;
+            const targetWidth = bar.style.width;
+            bar.style.width = '0%'; // Reset to 0
+            setTimeout(() => {
+                bar.style.width = targetWidth; // Animate to target
+            }, 100);
+            observer.unobserve(bar); // Only animate once
+        }
+    });
+};
+
+const skillObserver = new IntersectionObserver(animateSkillBars, {
+    threshold: 0.5
+});
+
+skillBars.forEach(bar => {
+    skillObserver.observe(bar);
+});
