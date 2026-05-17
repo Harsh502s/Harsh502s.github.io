@@ -612,6 +612,13 @@ body::after {
   border-color: rgba(135, 80, 247, 0.3);
 }
 
+
+.contact-card--link {
+  cursor: pointer;
+  display: flex;
+  text-decoration: none;
+  color: inherit;
+}
 .contact__icon {
   width: 64px;
   height: 64px;
