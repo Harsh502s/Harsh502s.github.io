@@ -69,7 +69,7 @@ sr.reveal('.section-title', { origin: 'top', delay: 100 });
 sr.reveal('.skill-item', { interval: 100 });
 
 /*SCROLL PROJECTS*/
-sr.reveal('.project-card', { interval: 150 });
+sr.reveal('.projects-grid > .project-card:not(.project-card--hidden)', { interval: 150 });
 
 /*SCROLL CONTACT*/
 sr.reveal('.contact-card', { interval: 150 });
@@ -98,3 +98,20 @@ const skillObserver = new IntersectionObserver(animateSkillBars, {
 skillBars.forEach(bar => {
     skillObserver.observe(bar);
 });
+
+/*===== SHOW MORE PROJECTS =====*/
+const showMoreBtn = document.getElementById('showMoreBtn');
+const extraCards = document.querySelectorAll('.project-card--hidden');
+
+if (showMoreBtn && extraCards.length) {
+    showMoreBtn.addEventListener('click', () => {
+        const isOpen = extraCards[0].classList.contains('show');
+
+        extraCards.forEach(card => {
+            card.classList.toggle('show');
+        });
+
+        showMoreBtn.textContent = isOpen ? 'Show More' : 'Show Less';
+    });
+}
+

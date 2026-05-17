@@ -661,3 +661,31 @@ body::after {
   font-size: var(--label-md);
   letter-spacing: 0.05em;
 }
+
+/*===== PROJECTS TOGGLE =====*/
+.project-card--hidden {
+  display: none;
+}
+
+.project-card--hidden.show {
+  display: flex;
+  animation: cardFadeIn 0.45s ease forwards;
+}
+
+@keyframes cardFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.projects-toggle {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--space-4);
+}
+
