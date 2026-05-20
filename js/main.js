@@ -52,12 +52,13 @@ const sr = ScrollReveal({
     duration: 800,
     delay: 200,
     reset: false,
+    easing: 'cubic-bezier(0.22, 1, 0.36, 1)',
 });
 
 /*SCROLL HOME*/
 sr.reveal('.home__title', { delay: 100, origin: 'top' });
 sr.reveal('.home__subtitle', { delay: 200, origin: 'top' });
-sr.reveal('.btn--primary', { delay: 300 });
+sr.reveal('.home__actions .btn--primary', { delay: 300 });
 sr.reveal('.social-icon', { interval: 100, delay: 400 });
 
 /*SCROLL ABOUT*/
@@ -66,38 +67,13 @@ sr.reveal('.about__text', { interval: 150, origin: 'right' });
 sr.reveal('.section-title', { origin: 'top', delay: 100 });
 
 /*SCROLL SKILLS*/
-sr.reveal('.skill-item', { interval: 100 });
+sr.reveal('.skill-tile', { interval: 100 });
 
 /*SCROLL PROJECTS*/
-sr.reveal('.projects-grid > .project-card:not(.project-card--hidden)', { interval: 150 });
+sr.reveal('.projects-grid > .project-card', { interval: 150 });
 
 /*SCROLL CONTACT*/
 sr.reveal('.contact-card', { interval: 150 });
-
-/* SKILL BAR ANIMATION */
-const skillBars = document.querySelectorAll('.skill-bar-fill');
-
-const animateSkillBars = (entries, observer) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            const bar = entry.target;
-            const targetWidth = bar.style.width;
-            bar.style.width = '0%'; // Reset to 0
-            setTimeout(() => {
-                bar.style.width = targetWidth; // Animate to target
-            }, 100);
-            observer.unobserve(bar); // Only animate once
-        }
-    });
-};
-
-const skillObserver = new IntersectionObserver(animateSkillBars, {
-    threshold: 0.5
-});
-
-skillBars.forEach(bar => {
-    skillObserver.observe(bar);
-});
 
 /*===== SHOW MORE PROJECTS =====*/
 const showMoreBtn = document.getElementById('showMoreBtn');

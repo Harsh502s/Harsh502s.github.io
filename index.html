@@ -3,12 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Harshit Singh — Data Science & Machine Learning portfolio. Projects in NLP, Deep Learning, and AI-powered tools.">
+    <meta property="og:title" content="Harshit Singh | ML & Data Science Portfolio">
+    <meta property="og:description" content="Machine Learning, Deep Learning, and NLP projects by Harshit Singh.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://harsh502s.github.io">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>H</text></svg>">
     <link rel="stylesheet" href="./styles.css">
     <!-- Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <title>Harshit Singh | Portfolio</title>
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to content</a>
+    <div class="noise-overlay" aria-hidden="true"></div>
     <!--===== HEADER =====-->
     <header class="l-header" id="header">
         <nav class="nav bd-grid">
@@ -31,19 +39,21 @@
     </header>
 
     <!--===== MAIN =====-->
-    <main class="l-main">
+    <main class="l-main" id="main-content">
         <!--===== HERO =====-->
         <section class="home" id="home">
             <div class="home__container bd-grid">
-                <h1 class="home__title">Harshit Singh</h1>
-                <h2 class="home__subtitle">Machine Learning <span>|</span> Deep Learning <span>|</span> NLP</h2>
-                <a target="_blank" href="https://drive.google.com/drive/folders/19CBxltWynvYSZnEg6_r3bvQQVxdzIhv9?usp=drive_link" class="btn btn--primary">Resume</a>
+                <div class="home__actions">
+                    <h1 class="home__title">Harshit Singh</h1>
+                    <h2 class="home__subtitle">Machine Learning <span>|</span> Deep Learning <span>|</span> NLP</h2>
+                    <a target="_blank" href="https://drive.google.com/drive/folders/19CBxltWynvYSZnEg6_r3bvQQVxdzIhv9?usp=drive_link" class="btn btn--primary">Resume</a>
+                </div>
                 
                 <div class="home__social">
-                    <a target="_blank" href="https://www.linkedin.com/in/harsh502singh/" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a target="_blank" href="https://github.com/Harsh502s" class="social-icon"><i class="fa-brands fa-github"></i></a>
-                    <a target="_blank" href="https://huggingface.co/Harsh502s" class="social-icon">&#129303;</a>
-                    <a target="_blank" href="https://www.Kaggle.com/harsh502s" class="social-icon"><i class="fa-brands fa-kaggle"></i></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/harsh502singh/" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a target="_blank" href="https://github.com/Harsh502s" class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a target="_blank" href="https://huggingface.co/Harsh502s" class="social-icon" aria-label="Hugging Face">&#129303;</a>
+                    <a target="_blank" href="https://www.Kaggle.com/harsh502s" class="social-icon" aria-label="Kaggle"><i class="fa-brands fa-kaggle"></i></a>
                 </div>
             </div>
         </section>
@@ -55,7 +65,7 @@
                 <div class="about__container">
                     <div class="about__img-wrapper">
                         <div class="about__img">
-                            <img src="./img/dp.webp" alt="Harshit Singh Profile Photo">
+                            <img src="./img/dp.webp" alt="Harshit Singh Profile Photo" loading="lazy" decoding="async">
                         </div>
                     </div>
                     <div>
@@ -71,54 +81,81 @@
             <div class="bd-grid">
                 <h2 class="section-title">Technical Skills</h2>
                 <div class="skills__container">
-                    <!-- Skill 1 -->
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <i class="fab fa-python skill-icon"></i>
-                            <span class="skill-name">Python</span>
+                    <div class="skills-grid">
+                        <!-- Skill 1 -->
+                        <div class="skill-tile">
+                            <div class="skill-tile__header">
+                                <i class="fab fa-python skill-tile__icon"></i>
+                                <span class="skill-tile__name">Python</span>
+                            </div>
+                            <div class="skill-tile__level">
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot"></span>
+                            </div>
+                            <span class="skill-tile__label">Advanced</span>
                         </div>
-                        <div class="skill-bar-bg">
-                            <div class="skill-bar-fill" style="width: 90%;"></div>
+                        <!-- Skill 2 -->
+                        <div class="skill-tile">
+                            <div class="skill-tile__header">
+                                <i class="fa fa-database skill-tile__icon"></i>
+                                <span class="skill-tile__name">SQL</span>
+                            </div>
+                            <div class="skill-tile__level">
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot"></span>
+                            </div>
+                            <span class="skill-tile__label">Advanced</span>
                         </div>
-                    </div>
-                    <!-- Skill 2 -->
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <i class="fa fa-database skill-icon"></i>
-                            <span class="skill-name">SQL</span>
+                        <!-- Skill 3 -->
+                        <div class="skill-tile">
+                            <div class="skill-tile__header">
+                                <i class="fa fa-cogs skill-tile__icon"></i>
+                                <span class="skill-tile__name">Machine Learning</span>
+                            </div>
+                            <div class="skill-tile__level">
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot"></span>
+                            </div>
+                            <span class="skill-tile__label">Advanced</span>
                         </div>
-                        <div class="skill-bar-bg">
-                            <div class="skill-bar-fill" style="width: 80%;"></div>
+                        <!-- Skill 4 -->
+                        <div class="skill-tile">
+                            <div class="skill-tile__header">
+                                <i class="fas fa-brain skill-tile__icon"></i>
+                                <span class="skill-tile__name">Deep Learning</span>
+                            </div>
+                            <div class="skill-tile__level">
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot"></span>
+                                <span class="skill-dot"></span>
+                            </div>
+                            <span class="skill-tile__label">Intermediate</span>
                         </div>
-                    </div>
-                    <!-- Skill 3 -->
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <i class="fa fa-cogs skill-icon"></i>
-                            <span class="skill-name">Machine Learning</span>
-                        </div>
-                        <div class="skill-bar-bg">
-                            <div class="skill-bar-fill" style="width: 85%;"></div>
-                        </div>
-                    </div>
-                    <!-- Skill 4 -->
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <i class="fas fa-brain skill-icon"></i>
-                            <span class="skill-name">Deep Learning</span>
-                        </div>
-                        <div class="skill-bar-bg">
-                            <div class="skill-bar-fill" style="width: 75%;"></div>
-                        </div>
-                    </div>
-                    <!-- Skill 5 -->
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <i class="fa fa-language skill-icon"></i>
-                            <span class="skill-name">Natural Language Processing</span>
-                        </div>
-                        <div class="skill-bar-bg">
-                            <div class="skill-bar-fill" style="width: 80%;"></div>
+                        <!-- Skill 5 -->
+                        <div class="skill-tile">
+                            <div class="skill-tile__header">
+                                <i class="fa fa-language skill-tile__icon"></i>
+                                <span class="skill-tile__name">NLP</span>
+                            </div>
+                            <div class="skill-tile__level">
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot filled"></span>
+                                <span class="skill-dot"></span>
+                            </div>
+                            <span class="skill-tile__label">Advanced</span>
                         </div>
                     </div>
                 </div>
@@ -134,7 +171,7 @@
                     <div class="project-card">
                         <div class="project__img">
                             <a target="_blank" href="https://readmegenrator.vercel.app/">
-                                <img src="img/readmegenrator.vercel.app_.webp" alt="Readme-Gen-Rator">
+                                <img src="img/readmegenrator.vercel.app_.webp" alt="Readme-Gen-Rator" loading="lazy" decoding="async">
                             </a>
                         </div>
                         <div class="project__content">
@@ -155,7 +192,7 @@
                     <div class="project-card">
                         <div class="project__img">
                             <a target="_blank" href="https://dingbats-game-sigma.vercel.app/">
-                                <img src="img/dingbats-game-sigma.vercel.app_.webp" alt="Dingbats Multiplayer Game">
+                                <img src="img/dingbats-game-sigma.vercel.app_.webp" alt="Dingbats Multiplayer Game" loading="lazy" decoding="async">
                             </a>
                         </div>
                         <div class="project__content">
@@ -175,7 +212,7 @@
                     <div class="project-card">
                         <div class="project__img">
                             <a target="_blank" href="https://huggingface.co/spaces/Harsh502s/Anime-Recommender">
-                                <img src="img/anime.webp" alt="Anime Recommendation System">
+                                <img src="img/anime.webp" alt="Anime Recommendation System" loading="lazy" decoding="async">
                             </a>
                         </div>
                         <div class="project__content">
@@ -198,7 +235,7 @@
                     <div class="project-card">
                         <div class="project__img">
                             <a target="_blank" href="https://huggingface.co/spaces/Harsh502s/Autonomous_Text_Tagging_App">
-                                <img src="img/Filter-bro.png" alt="Autonomous Text Tagging System">
+                                <img src="img/Filter-bro.png" alt="Autonomous Text Tagging System" loading="lazy" decoding="async">
                             </a>
                         </div>
                         <div class="project__content">
@@ -220,7 +257,7 @@
                     <div class="project-card project-card--hidden">
                         <div class="project__img">
                             <a target="_blank" href="https://github.com/Harsh502s/Airline-Review-Sentiment-Analysis">
-                                <img src="img/sen2.webp" alt="Airline Review Sentiment Analysis">
+                                <img src="img/sen2.webp" alt="Airline Review Sentiment Analysis" loading="lazy" decoding="async">
                             </a>
                         </div>
                         <div class="project__content">
@@ -239,7 +276,7 @@
                     </div>
                 </div>
                 <div class="projects-toggle">
-                    <button id="showMoreBtn" class="btn btn--primary">Show More</button>
+                    <button id="showMoreBtn" class="btn btn--text">View all projects <i class="fa fa-arrow-right" style="margin-left: 6px; font-size: 12px;"></i></button>
                 </div>
             </div>
         </section>
@@ -253,10 +290,10 @@
                         <div class="contact__icon"><i class="fas fa-envelope"></i></div>
                         <p class="contact__info">harsh502singh@gmail.com</p>
                     </a>
-
                     <div class="contact-card">
-                        <div class="contact__icon"><i class="fas fa-home"></i></div>
-                        <p class="contact__info">Pune, Maharashtra - 411047</p>
+                        <div class="contact__icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <p class="contact__info">Pune, Maharashtra</p>
+                        <p class="contact__location">411047</p>
                     </div>
                 </div>
             </div>
@@ -266,11 +303,10 @@
     <!--===== FOOTER =====-->
     <footer class="footer">
         <div class="footer__social">
-            <a target="_blank" href="https://github.com/Harsh502s"><i class="fa-brands fa-github"></i></a>
-            <a target="_blank" href="https://www.instagram.com/the_cropped_guy/"><i class="fa-brands fa-instagram"></i></a>
-            <a target="_blank" href="https://twitter.com/harsh502s"><i class="fa-brands fa-twitter"></i></a>
+            <a target="_blank" href="https://github.com/Harsh502s" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/harsh502singh/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
         </div>
-        <p class="footer__copy">&#169; 2026 Harshit Singh. Built with Visionary Aesthetics.</p>
+        <p class="footer__copy">&#169; 2026 Harshit Singh</p>
     </footer>
 
     <!--===== SCROLL REVEAL =====-->
