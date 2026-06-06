@@ -464,8 +464,9 @@ body .noise-overlay {
   width: 100%;
   aspect-ratio: 1;
   object-fit: cover;
-  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, filter 0.5s ease;
   filter: grayscale(20%) contrast(1.1);
+  will-change: transform, filter;
 }
 
 .about__img-wrapper:hover img {
@@ -508,6 +509,7 @@ body .noise-overlay {
   flex-direction: column;
   gap: var(--space-2);
   transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform;
 }
 
 .skill-tile:hover {
@@ -604,6 +606,7 @@ body .noise-overlay {
   display: flex;
   flex-direction: column;
   transition: all 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform;
 }
 
 .project-card:hover {
@@ -617,6 +620,7 @@ body .noise-overlay {
   aspect-ratio: 16/9;
   overflow: hidden;
   position: relative;
+  will-change: auto;
 }
 
 .project__img img {
@@ -624,6 +628,7 @@ body .noise-overlay {
   height: 100%;
   object-fit: cover;
   transition: transform 0.5s ease;
+  will-change: transform;
 }
 
 .project-card:hover .project__img img {

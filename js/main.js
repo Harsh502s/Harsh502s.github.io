@@ -26,24 +26,27 @@ function linkAction() {
 navLink.forEach((n) => n.addEventListener('click', linkAction));
 
 /*===== SCROLL SECTIONS ACTIVE LINK =====*/
-const sections = document.querySelectorAll('section[id]')
+const sections = document.querySelectorAll('section[id]');
 
 function scrollActive(){
-    const scrollY = window.pageYOffset
+    const scrollY = window.pageYOffset;
 
     sections.forEach(current =>{
-        const sectionHeight = current.offsetHeight
+        const sectionHeight = current.offsetHeight;
         const sectionTop = current.offsetTop - 100;
-        const sectionId = current.getAttribute('id')
-
-        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active')
-        }else{
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active')
+        const sectionId = current.getAttribute('id');
+        const navItem = document.querySelector(`.nav__menu a[href="#${sectionId}"]`);
+        
+        if(navItem) {
+            if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+                navItem.classList.add('active');
+            } else {
+                navItem.classList.remove('active');
+            }
         }
-    })
+    });
 }
-window.addEventListener('scroll', scrollActive)
+window.addEventListener('scroll', scrollActive, { passive: true });
 
 /*===== SCROLL REVEAL ANIMATION =====*/
 const sr = ScrollReveal({
